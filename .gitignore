@@ -1,0 +1,9 @@
+# MacOS
+.DS_Store
+
+# project dirs
+data/
+submit/
+
+# python cache
+__pycache__/
