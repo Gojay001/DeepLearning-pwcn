@@ -4,6 +4,7 @@ There are paper with code and note in terms of deep learning.
 |- Classification
     |- NIN(Network In Network)
 |- Detection
+    |- Faster R-CNN
 |- Few-Shot Learning
     |- RN(Relation Network)
 ```
@@ -20,6 +21,7 @@ There are paper with code and note in terms of deep learning.
 | Net | Title | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
 | RCNN | [Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation](http://openaccess.thecvf.com/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf) | CVPR(2014) | [code]()
+| Faster R-CNN | [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/pdf/1506.01497.pdf) | NIPS(2015) | [code](https://github.com/Gojay001/faster-rcnn.pytorch)
 
 ### Few-Shot Learning
 | Net | Title | Conf | Code |
