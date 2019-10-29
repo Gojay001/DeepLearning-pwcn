@@ -3,6 +3,7 @@ There are paper with code and note in terms of deep learning.
 ```
 |- Classification
     |- NIN(Network In Network)
+    |- GoogLeNet(Inception v1)
 |- Detection
     |- Faster R-CNN
 |- Few-Shot Learning
@@ -16,6 +17,7 @@ There are paper with code and note in terms of deep learning.
 |:--------|:--------:|:--------:|:--------:|
 | LeNet-5 | [Gradient-based learning applied to document recognition](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) | IEEE(1998) | [code]()
 | NIN | [Network In Network](https://arxiv.org/pdf/1312.4400.pdf) | arXiv(2013) | [code](https://github.com/Gojay001/DeepLearning-pwcn/tree/master/Classification/NIN/Code)
+| GoogLeNet | [Going deeper with convolutions](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf | CVPR(2015) | [code](https://github.com/Gojay001/DeepLearning-pwcn/tree/master/Classification/GoogLeNet/Code)
 
 ### Object Detection
 | Net | Title | Conf | Code |

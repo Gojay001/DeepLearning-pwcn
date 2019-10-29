@@ -4,6 +4,7 @@
 # project dirs
 data/
 submit/
+checkpoints/
 
 # python cache
 __pycache__/
