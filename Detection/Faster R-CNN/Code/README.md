@@ -1,4 +1,4 @@
-## Code of Relation Network
+## Code of Faster R-CNN
 ---
 [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/pdf/1506.01497.pdf)(NIPS 2015 paper)  
 
