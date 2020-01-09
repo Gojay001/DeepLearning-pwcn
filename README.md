@@ -8,7 +8,7 @@ There are paper with code and note in terms of deep learning.
     |- Faster R-CNN
 |- Tracking
     |- SiamMask
-    |- tracking_wo_bnw
+    |- Tracktor
 |- Few-Shot Learning
     |- RN(Relation Network)
 ```
@@ -32,7 +32,7 @@ There are paper with code and note in terms of deep learning.
 | Net | Title | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
 | SiamMask | [Fast Online Object Tracking and Segmentation: A Unifying Approach](http://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Fast_Online_Object_Tracking_and_Segmentation_A_Unifying_Approach_CVPR_2019_paper.pdf) | CVPR(2019) | [code](https://github.com/Gojay001/SiamMask)
-| traking_wo_bnw | [Tracking without bells and whistles](https://arxiv.org/pdf/1903.05625.pdf) | ICCV(2019) | [code](https://github.com/Gojay001/tracking_wo_bnw)
+| Tracktor | [Tracking without bells and whistles](https://arxiv.org/pdf/1903.05625.pdf) | ICCV(2019) | [code](https://github.com/Gojay001/tracking_wo_bnw)
 
 ### Few-Shot Learning
 | Net | Title | Conf | Code |
