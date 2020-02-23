@@ -36,8 +36,8 @@ There are paper with code and note in terms of deep learning.
 ### Object Tracking
 | Net | Title | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
-| DepthTrack | [Real-time depth-based tracking using a binocular camera](https://github.com/Gojay001/DeepLearning-pwcn/tree/master/Tracking/Binocular20%camera/DepthTrack.pdf) | WCICA(2016) | [code]
-| BinocularTrack | [Research on Target Tracking Algorithm Based on Parallel Binocular Camera](https://github.com/Gojay001/DeepLearning-pwcn/tree/master/Tracking/Binocular20%camera/BinocularTrack.pdf) | ITAIC(2019) | [code]
+| DepthTrack | [Real-time depth-based tracking using a binocular camera](https://github.com/Gojay001/DeepLearning-pwcn/tree/master/Tracking/Binocular%20camera/DepthTrack.pdf) | WCICA(2016) | [code]
+| BinocularTrack | [Research on Target Tracking Algorithm Based on Parallel Binocular Camera](https://github.com/Gojay001/DeepLearning-pwcn/blob/master/Tracking/Binocular%20camera/BinocularTrack.pdf) | ITAIC(2019) | [code]
 | SiamMask | [Fast Online Object Tracking and Segmentation: A Unifying Approach](http://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Fast_Online_Object_Tracking_and_Segmentation_A_Unifying_Approach_CVPR_2019_paper.pdf) | CVPR(2019) | [code](https://github.com/Gojay001/SiamMask)
 | Tracktor | [Tracking without bells and whistles](https://arxiv.org/pdf/1903.05625.pdf) | ICCV(2019) | [code](https://github.com/Gojay001/tracking_wo_bnw)
 | GlobalTrack | [GlobalTrack: A Simple and Strong Baseline for Long-term Tracking](https://arxiv.org/pdf/1912.08531.pdf) | AAAI(2020) | [code](https://github.com/huanglianghua/GlobalTrack)
