@@ -8,7 +8,7 @@ There are paper with code and note in terms of deep learning.
 |- Detection
     |- Faster R-CNN
 |- Tracking
-    |-DepthTrack
+    |- DepthTrack
     |- BinocularTrack
     |- SiamMask
     |- Tracktor
@@ -41,6 +41,7 @@ There are paper with code and note in terms of deep learning.
 | SiamMask | [Fast Online Object Tracking and Segmentation: A Unifying Approach](http://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Fast_Online_Object_Tracking_and_Segmentation_A_Unifying_Approach_CVPR_2019_paper.pdf) | CVPR(2019) | [code](https://github.com/Gojay001/SiamMask)
 | Tracktor | [Tracking without bells and whistles](https://arxiv.org/pdf/1903.05625.pdf) | ICCV(2019) | [code](https://github.com/Gojay001/tracking_wo_bnw)
 | GlobalTrack | [GlobalTrack: A Simple and Strong Baseline for Long-term Tracking](https://arxiv.org/pdf/1912.08531.pdf) | AAAI(2020) | [code](https://github.com/huanglianghua/GlobalTrack)
+| PAMCC-AOT | [Pose-Assisted Multi-Camera Collaboration for Active Object Tracking](https://arxiv.org/pdf/2001.05161.pdf) | arXiv(2020) | [code]
 
 ### Few-Shot Learning
 | Net | Title | Conf | Code |
