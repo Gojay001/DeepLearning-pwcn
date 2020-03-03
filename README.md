@@ -14,6 +14,7 @@ There are paper with code and note in terms of deep learning.
     |- Tracktor
     |- GlobalTrack
     |- PAMCC-AOT
+    |- Flow-Fuse Tracker
     |- JRMOT
 |- Few-Shot Learning
     |- RN(Relation Network)
@@ -44,6 +45,7 @@ There are paper with code and note in terms of deep learning.
 | Tracktor | [Tracking without bells and whistles](https://arxiv.org/pdf/1903.05625.pdf) | ICCV(2019) | [code](https://github.com/Gojay001/tracking_wo_bnw)
 | GlobalTrack | [GlobalTrack: A Simple and Strong Baseline for Long-term Tracking](https://arxiv.org/pdf/1912.08531.pdf) | AAAI(2020) | [code](https://github.com/huanglianghua/GlobalTrack)
 | PAMCC-AOT | [Pose-Assisted Multi-Camera Collaboration for Active Object Tracking](https://arxiv.org/pdf/2001.05161.pdf) | arXiv(2020) | [code]
+| FFT | [Multiple Object Tracking by Flowing and Fusing](https://arxiv.org/abs/2001.11180) | arXiv(2020) | [code]
 | JRMOT | [JRMOT: A Real-Time 3D Multi-Object Tracker and a New Large-Scale Dataset](https://arxiv.org/pdf/2002.08397.pdf) | arXiv(2020) | [code]
 
 ### Few-Shot Learning
