@@ -2,10 +2,12 @@
 There are paper with code and note in terms of deep learning.
 ```
 |- Classification
+    |- LeNet-5
     |- NIN(Network In Network)
     |- GoogLeNet(Inception v1)
     |- ResNet
 |- Detection
+    |- RCNN
     |- Faster R-CNN
 |- Tracking
     |- DepthTrack
@@ -22,6 +24,8 @@ There are paper with code and note in terms of deep learning.
     |- RN(Relation Network)
 |- GAN
     |- BeautyGAN
+|- Image Generation
+    |- ImageTransformer
 ```
 
 ## Paper
@@ -63,3 +67,8 @@ There are paper with code and note in terms of deep learning.
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
 | BeautyGAN | [Beautygan: Instance-level facial makeup transfer with deep generative adversarial network](http://colalab.org/media/paper/BeautyGAN-camera-ready.pdf) | ACM(2018) | [TensorFlow](http://liusi-group.com/projects/BeautyGAN)
+
+## Image Generation
+| Title | Paper | Conf | Code |
+|:--------|:--------:|:--------:|:--------:|
+| [ImageTransformer](https://gojay.top/2020/05/15/Image-Transformer/) | [Image Transformer](https://arxiv.org/abs/1802.05751) | arXiv(2018) | [code]
