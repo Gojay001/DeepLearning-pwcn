@@ -15,6 +15,7 @@ There are paper with code and note in terms of deep learning.
         |- Flow-Fuse Tracker
         |- JRMOT
         |- Tracklet
+        |- FairMOT
     |- VOT
         |- DepthTrack
         |- BinocularTrack
@@ -61,6 +62,7 @@ There are paper with code and note in terms of deep learning.
 | [JRMOT](https://gojay.top/2020/02/28/JRMOT/) | [JRMOT: A Real-Time 3D Multi-Object Tracker and a New Large-Scale Dataset](https://arxiv.org/pdf/2002.08397.pdf) | arXiv(2020) | [code]
 | [Tracklet](https://gojay.top/2020/03/26/Tracklet/) | [Multi-object Tracking via End-to-end Tracklet Searching and Ranking](https://arxiv.org/abs/2003.02795) | arXiv(2020) | [code]
 | [TSDM](https://gojay.top/2020/05/23/TSDM/) | [TSDM: Tracking by SiamRPN++ with a Depth-refiner and a Mask-generator](https://arxiv.org/abs/2005.04063) | arXiv(2020) | [PyTorch](https://github.com/Gojay001/TSDM)
+| [FairMOT](https://gojay.top/2020/05/25/FairMOT/) | [A Simple Baseline for Multi-Object Tracking](https://arxiv.org/abs/2004.01888) | arXiv(2020) | [PyTorch](https://github.com/Gojay001/FairMOT)
 
 ## Few-Shot Learning
 | Title | Paper | Conf | Code |
