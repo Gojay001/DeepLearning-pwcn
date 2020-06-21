@@ -1,12 +1,7 @@
 # DeepLearning-pwcn
 There are paper with code and note in terms of deep learning.
-- [Classification](#Image Classification)
-- [Classification](#Image%20Classification)
-- [Classification](#Image_Classification)
-- [Classification](#Image-Classification)
-- [Classification](##Image Classification)
 ```
-|- [Classification](#Image Classification)
+|- [Classification](#Image-Classification)
     |- LeNet-5
     |- NIN(Network In Network)
     |- GoogLeNet(Inception v1)
