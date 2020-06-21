@@ -1,38 +1,52 @@
 # DeepLearning-pwcn
 There are paper with code and note in terms of deep learning.
-```
-|- [Classification](#Image-Classification)
-    |- LeNet-5
-    |- NIN(Network In Network)
-    |- GoogLeNet(Inception v1)
-    |- ResNet
-|- Detection
-    |- RCNN
-    |- Faster R-CNN
-|- Tracking
-    |- MOT
-        |- SORT
-        |- DeepSORT
-        |- Tracktor
-        |- Flow-Fuse Tracker
-        |- JRMOT
-        |- Tracklet
-        |- FairMOT
-    |- VOT
-        |- DepthTrack
-        |- BinocularTrack
-        |- SiamRPN++
-        |- SiamMask
-        |- GlobalTrack
-        |- PAMCC-AOT
-        |- TSDM
-|- Few-Shot Learning
-    |- RN(Relation Network)
-|- GAN
-    |- BeautyGAN
-|- Image Generation
-    |- ImageTransformer
-```
+
+- [Classification](#Image-Classification)
+    - LeNet-5
+    - AlexNet
+    - NIN(Network In Network)
+    - VGG
+    - GoogLeNet(Inception-v1)
+    - ResNet
+    - Inception-v4
+    - ShuffleNet
+    - MobileNetV3
+- [Detection](#Object-Detection)
+    - One-stage
+        - SSD
+        - YOLO
+        - YOLOv2
+        - YOLOv3
+        - YOLOv4
+    - Two-stage
+        - R-CNN
+        - Fast R-CNN
+        - Faster R-CNN
+        - FPN
+        - Mask R-CNN
+- [Tracking](#Object-Tracking)
+    - MOT
+        - SORT
+        - DeepSORT
+        - Tracktor
+        - Flow-Fuse Tracker
+        - JRMOT
+        - Tracklet
+        - FairMOT
+    - VOT
+        - DepthTrack
+        - BinocularTrack
+        - SiamRPN++
+        - SiamMask
+        - GlobalTrack
+        - PAMCC-AOT
+        - TSDM
+- [Few-Shot Learning](#Few-Shot-Learning)
+    - RN(Relation Network)
+- [GAN](#Generative-Adversarial-Network)
+    - BeautyGAN
+- [Image Generation](#Image-Generation)
+    - ImageTransformer
 
 ## Paper
 
@@ -40,15 +54,30 @@ There are paper with code and note in terms of deep learning.
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
 | LeNet-5 | [Gradient-based learning applied to document recognition](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) | IEEE(1998) | [code]
+| AlexNet | [ImageNet Classification with Deep Convolutional Neural Networks](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) | NIPS(2012) | [code]
 | [NIN](https://gojay.top/2019/08/31/NIN-Network-In-Network/) | [Network In Network](https://arxiv.org/abs/1312.4400) | arXiv(2013) | [PyTorch](https://github.com/Gojay001/DeepLearning-pwcn/tree/master/Classification/NIN/Code)
+| VGG | [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556) | ICLR(2015) | [code]
 | [GoogLeNet](https://gojay.top/2019/09/05/GoogLeNet/) | [Going deeper with convolutions](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf) | CVPR(2015) | [PyTorch](https://github.com/Gojay001/DeepLearning-pwcn/tree/master/Classification/GoogLeNet/Code)
 | [ResNet](https://gojay.top/2019/09/08/ResNet/) | [Deep Residual Learning for Image Recognition](http://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf) | CVPR(2016) | [PyTorch](https://github.com/Gojay001/DeepLearning-pwcn/tree/master/Classification/ResNet/Code)
+| Inception-v4 | [Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning](https://www.aaai.org/ocs/index.php/AAAI/AAAI17/paper/viewFile/14806/14311) | AAAI(2017) | [code]
+| ShuffleNet | [ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_ShuffleNet_An_Extremely_CVPR_2018_paper.pdf) | CVPR(2018) | [code]
+| MobileNetV3 | [Searching for MobileNetV3](http://openaccess.thecvf.com/content_ICCV_2019/papers/Howard_Searching_for_MobileNetV3_ICCV_2019_paper.pdf) | ICCV(2019) | [code]
+> More information can be found in [Awesome - Image Classification](https://github.com/weiaicunzai/awesome-image-classification).
 
 ## Object Detection
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
-| RCNN | [Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation](http://openaccess.thecvf.com/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf) | CVPR(2014) | [code]
+| R-CNN | [Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation](http://openaccess.thecvf.com/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf) | CVPR(2014) | [code]
+| Fast R-CNN | [Fast R-CNN](http://openaccess.thecvf.com/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf) | ICCV(2015) | [code]
 | [Faster R-CNN](https://gojay.top/2019/10/19/Faster-R-CNN/) | [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497) | NIPS(2015) | [PyTorch](https://github.com/Gojay001/faster-rcnn.pytorch)
+| SSD | [SSD: Single Shot MultiBox Detector](https://arxiv.org/abs/1512.02325) | ECCV(2016) | [Caffe](https://github.com/weiliu89/caffe/tree/ssd)
+| YOLO | [You Only Look Once: Unified, Real-Time Object Detection](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf) | CVPR(2016) | [code]
+| YOLOv2 | [YOLO9000: Better, Faster, Stronger](http://openaccess.thecvf.com/content_cvpr_2017/papers/Redmon_YOLO9000_Better_Faster_CVPR_2017_paper.pdf) | CVPR(2017) | [code]
+| FPN | [Feature Pyramid Networks for Object Detection](http://openaccess.thecvf.com/content_cvpr_2017/papers/Lin_Feature_Pyramid_Networks_CVPR_2017_paper.pdf) | CVPR(2017) | [code]
+| Mask R-CNN | [Mask R-CNN](http://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf) | ICCV(2017) | [PyTorch](https://github.com/facebookresearch/detectron2)
+| YOLOv3 | [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767) | arXiv(2018) | [Offical](https://github.com/pjreddie/darknet)
+| YOLOv4 | [YOLOv4: Optimal Speed and Accuracy of Object Detection](https://arxiv.org/abs/2004.10934) | arXiv(2020) | [Offical](https://github.com/AlexeyAB/darknet)
+> More information can be found in [awesome-object-detection](https://github.com/amusi/awesome-object-detection).
 
 ## Object Tracking
 | Title | Paper | Conf | Code |
