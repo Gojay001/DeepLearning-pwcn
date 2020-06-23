@@ -9,6 +9,7 @@ There are paper with code and note in terms of deep learning.
     - GoogLeNet(Inception-v1)
     - ResNet
     - Inception-v4
+    - - DenseNet
     - ShuffleNet
     - MobileNetV3
 - [Detection](#Object-Detection)
@@ -24,6 +25,8 @@ There are paper with code and note in terms of deep learning.
         - Faster R-CNN
         - FPN
         - Mask R-CNN
+-[Detection-3D](#Detection-3D)
+    -PV-RCNN
 - [Tracking](#Object-Tracking)
     - MOT
         - SORT
@@ -60,6 +63,7 @@ There are paper with code and note in terms of deep learning.
 | [GoogLeNet](https://gojay.top/2019/09/05/GoogLeNet/) | [Going deeper with convolutions](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf) | CVPR(2015) | [PyTorch](https://github.com/Gojay001/DeepLearning-pwcn/tree/master/Classification/GoogLeNet/Code)
 | [ResNet](https://gojay.top/2019/09/08/ResNet/) | [Deep Residual Learning for Image Recognition](http://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf) | CVPR(2016) | [PyTorch](https://github.com/Gojay001/DeepLearning-pwcn/tree/master/Classification/ResNet/Code)
 | Inception-v4 | [Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning](https://www.aaai.org/ocs/index.php/AAAI/AAAI17/paper/viewFile/14806/14311) | AAAI(2017) | [code]
+| DenseNet | [Densely Connected Convolutional Networks](http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.pdf) | CVPR(2017) | [code]
 | ShuffleNet | [ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_ShuffleNet_An_Extremely_CVPR_2018_paper.pdf) | CVPR(2018) | [code]
 | MobileNetV3 | [Searching for MobileNetV3](http://openaccess.thecvf.com/content_ICCV_2019/papers/Howard_Searching_for_MobileNetV3_ICCV_2019_paper.pdf) | ICCV(2019) | [code]
 > More information can be found in [Awesome - Image Classification](https://github.com/weiaicunzai/awesome-image-classification).
@@ -78,6 +82,11 @@ There are paper with code and note in terms of deep learning.
 | YOLOv3 | [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767) | arXiv(2018) | [Offical](https://github.com/pjreddie/darknet)
 | YOLOv4 | [YOLOv4: Optimal Speed and Accuracy of Object Detection](https://arxiv.org/abs/2004.10934) | arXiv(2020) | [Offical](https://github.com/AlexeyAB/darknet)
 > More information can be found in [awesome-object-detection](https://github.com/amusi/awesome-object-detection).
+
+## Detection-3D
+| Title | Paper | Conf | Code |
+|:--------|:--------:|:--------:|:--------:|
+| [PV-RCNN](https://gojay.top/2020/06/23/PV-RCNN/) | [PV-RCNN: Point-Voxel Feature Set Abstraction for 3D Object Detection](http://openaccess.thecvf.com/content_CVPR_2020/papers/Shi_PV-RCNN_Point-Voxel_Feature_Set_Abstraction_for_3D_Object_Detection_CVPR_2020_paper.pdf) | CVPR(2020) | [PyTorch](https://github.com/sshaoshuai/PV-RCNN)
 
 ## Object Tracking
 | Title | Paper | Conf | Code |
