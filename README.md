@@ -9,7 +9,7 @@ There are paper with code and note in terms of deep learning.
     - GoogLeNet(Inception-v1)
     - ResNet
     - Inception-v4
-    - - DenseNet
+    - DenseNet
     - ShuffleNet
     - MobileNetV3
 - [Detection](#Object-Detection)
@@ -25,7 +25,7 @@ There are paper with code and note in terms of deep learning.
         - Faster R-CNN
         - FPN
         - Mask R-CNN
--[Detection-3D](#3D-Object-Detection)
+- [Detection-3D](#3D-Object-Detection)
     -PV-RCNN
 - [Tracking](#Object-Tracking)
     - MOT
@@ -51,9 +51,9 @@ There are paper with code and note in terms of deep learning.
 - [Image Generation](#Image-Generation)
     - ImageTransformer
 - [Overview](#Overview)
-    - 3D-Detection_Survey-2019
-    - FSL_Survey-2019
-    - MOT_Survey-2020
+    - 3D-Detection-Survey-2019
+    - FSL-Survey-2019
+    - MOT-Survey-2020
 
 ## Paper
 
@@ -128,6 +128,6 @@ There are paper with code and note in terms of deep learning.
 ## Overview
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
-| [3D-Detection_Survey-2019] | [A Survey on 3D Object Detection Methods for Autonomous Driving Applications](http://wrap.warwick.ac.uk/114314/1/WRAP-survey-3D-object-detection-methods-autonomous-driving-applications-Arnold-2019.pdf) | ITS(2019) | [code]
-| [FSL_Survey-2019] | [Generalizing from a Few Examples: A Survey on Few-Shot Learning](https://arxiv.org/abs/1904.05046) | CSUR(2019) | [code]
-| [MOT_Survey-2020] | [Deep Learning in Video Multi-Object Tracking: A Survey](https://arxiv.org/abs/1907.12740) | Neurocomputing(2020) | [code]
+| [3D-Detection-Survey-2019] | [A Survey on 3D Object Detection Methods for Autonomous Driving Applications](http://wrap.warwick.ac.uk/114314/1/WRAP-survey-3D-object-detection-methods-autonomous-driving-applications-Arnold-2019.pdf) | ITS(2019) | [code]
+| [FSL-Survey-2019] | [Generalizing from a Few Examples: A Survey on Few-Shot Learning](https://arxiv.org/abs/1904.05046) | CSUR(2019) | [code]
+| [MOT-Survey-2020] | [Deep Learning in Video Multi-Object Tracking: A Survey](https://arxiv.org/abs/1907.12740) | Neurocomputing(2020) | [code]
