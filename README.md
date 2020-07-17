@@ -44,9 +44,17 @@ There are paper with code and note in terms of deep learning.
         - GlobalTrack
         - PAMCC-AOT
         - TSDM
-- [Few-Shot Learning](#Few-Shot-Learning)
+- [FSS](#Few-Shot-Segmentation)
+    - OSLSM
+    - PANet(Prototype Alignment)
+    - PGN(Pyramid Graph Network)
+    - CRNet(Cross-Reference Network)
+    - FGN(Fully Guided Network)
+    - DoG-BConvLSTM
+    - SG-One
+    - LTM(Local Transformation Module)
+- [FSL](#Few-Shot-Learning)
     - RN(Relation Network)
-    - CRNet(Cross-Reference Networks)
 - [GAN](#Generative-Adversarial-Network)
     - BeautyGAN
 - [Image Generation](#Image-Generation)
@@ -111,11 +119,23 @@ There are paper with code and note in terms of deep learning.
 | [TSDM](https://gojay.top/2020/05/23/TSDM/) | [TSDM: Tracking by SiamRPN++ with a Depth-refiner and a Mask-generator](https://arxiv.org/abs/2005.04063) | arXiv(2020) | [PyTorch](https://github.com/Gojay001/TSDM)
 | [FairMOT](https://gojay.top/2020/05/25/FairMOT/) | [A Simple Baseline for Multi-Object Tracking](https://arxiv.org/abs/2004.01888) | arXiv(2020) | [PyTorch](https://github.com/Gojay001/FairMOT)
 
+## Few-Shot Segmentation
+| Title | Paper | Conf | Code |
+|:--------|:--------:|:--------:|:--------:|
+| OSLSM | [One-Shot Learning for Semantic Segmentation](https://arxiv.org/abs/1709.03410) | arXiv(2017) | [Caffe](https://github.com/lzzcd001/OSLSM)
+| PANet | [PANet: Few-Shot Image Semantic Segmentation with Prototype Alignment](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_PANet_Few-Shot_Image_Semantic_Segmentation_With_Prototype_Alignment_ICCV_2019_paper.pdf) | ICCV(2019) | [PyTorch](https://github.com/kaixin96/PANet)
+| PGN | [Pyramid Graph Networks with Connection Attentions for Region-Based
+One-Shot Semantic Segmentation](https://openaccess.thecvf.com/content_ICCV_2019/papers/Zhang_Pyramid_Graph_Networks_With_Connection_Attentions_for_Region-Based_One-Shot_Semantic_ICCV_2019_paper.pdf) | ICCV(2019) | [code]
+| [CRNet](https://gojay.top/2019/07/10/CRNet/) | [CRNet: Cross-Reference Networks for Few-Shot Segmentation](https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_CRNet_Cross-Reference_Networks_for_Few-Shot_Segmentation_CVPR_2020_paper.pdf) | CVPR(2020) | [code]
+| FGN | [FGN: Fully Guided Network for Few-Shot Instance Segmentation](https://openaccess.thecvf.com/content_CVPR_2020/papers/Fan_FGN_Fully_Guided_Network_for_Few-Shot_Instance_Segmentation_CVPR_2020_paper.pdf) | CVPR(2020) | [code]
+| DoG-BConvLSTM | [On the Texture Bias for Few-Shot CNN Segmentation](https://arxiv.org/abs/2003.04052) | arXiv(2020) | [TensorFlow](https://github.com/rezazad68/fewshot-segmentation)
+| SG-One | [SG-One: Similarity Guidance Network for One-Shot Semantic Segmentation](https://arxiv.org/abs/1810.09091) | ITC(2020) | [PyTorch](https://github.com/xiaomengyc/SG-One)
+| LTM | [A New Local Transformation Module for Few-Shot Segmentation](https://arxiv.org/abs/1910.05886) | ICMM(2020) | [code]
+
 ## Few-Shot Learning
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
 | [RN](https://gojay.top/2019/08/21/RN-Realation-Network/) | [Learning to Compare: Relation Network for Few-Shot Learning](https://arxiv.org/abs/1711.06025) | CVPR(2018) | [PyTorch](https://github.com/Gojay001/LearningToCompare_FSL)
-| [CRNet](https://gojay.top/2019/07/10/CRNet/) | [CRNet: Cross-Reference Networks for Few-Shot Segmentation](https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_CRNet_Cross-Reference_Networks_for_Few-Shot_Segmentation_CVPR_2020_paper.pdf) | CVPR(2020) | [code]
 
 ## Generative Adversarial Network
 | Title | Paper | Conf | Code |
