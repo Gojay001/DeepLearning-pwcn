@@ -48,7 +48,7 @@ There are paper with code and note in terms of deep learning.
     - OSLSM
     - CENet(Combinatorial Embedding Network)
     - PANet(Prototype Alignment)
-    - PGN(Pyramid Graph Network)
+    - PGNet(Pyramid Graph Network)
     - AMP(Adaptive Masked Proxies)
     - CRNet(Cross-Reference Network)
     - FGN(Fully Guided Network)
@@ -127,13 +127,14 @@ There are paper with code and note in terms of deep learning.
 | OSLSM | [One-Shot Learning for Semantic Segmentation](https://arxiv.org/abs/1709.03410) | arXiv(2017) | [Caffe](https://github.com/lzzcd001/OSLSM)
 | CENet | [Learning Combinatorial Embedding Networks for Deep Graph Matching](https://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Learning_Combinatorial_Embedding_Networks_for_Deep_Graph_Matching_ICCV_2019_paper.pdf) | ICCV(2019) | [Pytorch](https://github.com/Thinklab-SJTU/PCA-GM)
 | PANet | [PANet: Few-Shot Image Semantic Segmentation with Prototype Alignment](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_PANet_Few-Shot_Image_Semantic_Segmentation_With_Prototype_Alignment_ICCV_2019_paper.pdf) | ICCV(2019) | [PyTorch](https://github.com/kaixin96/PANet)
-| PGN | [Pyramid Graph Networks with Connection Attentions for Region-Based One-Shot Semantic Segmentation](https://openaccess.thecvf.com/content_ICCV_2019/papers/Zhang_Pyramid_Graph_Networks_With_Connection_Attentions_for_Region-Based_One-Shot_Semantic_ICCV_2019_paper.pdf) | ICCV(2019) | [code]
+| [PGNet](https://gojay.top/2020/07/28/PGNet/) | [Pyramid Graph Networks with Connection Attentions for Region-Based One-Shot Semantic Segmentation](https://openaccess.thecvf.com/content_ICCV_2019/papers/Zhang_Pyramid_Graph_Networks_With_Connection_Attentions_for_Region-Based_One-Shot_Semantic_ICCV_2019_paper.pdf) | ICCV(2019) | [code]
 | AMP | [AMP: Adaptive Masked Proxies for Few-Shot Segmentation](https://openaccess.thecvf.com/content_ICCV_2019/papers/Siam_AMP_Adaptive_Masked_Proxies_for_Few-Shot_Segmentation_ICCV_2019_paper.pdf) | ICCV(2019) | [Pytorch](https://github.com/MSiam/AdaptiveMaskedProxies)
-| [CRNet](https://gojay.top/2019/07/10/CRNet/) | [CRNet: Cross-Reference Networks for Few-Shot Segmentation](https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_CRNet_Cross-Reference_Networks_for_Few-Shot_Segmentation_CVPR_2020_paper.pdf) | CVPR(2020) | [code]
+| [CRNet](https://gojay.top/2020/07/10/CRNet/) | [CRNet: Cross-Reference Networks for Few-Shot Segmentation](https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_CRNet_Cross-Reference_Networks_for_Few-Shot_Segmentation_CVPR_2020_paper.pdf) | CVPR(2020) | [code]
 | FGN | [FGN: Fully Guided Network for Few-Shot Instance Segmentation](https://openaccess.thecvf.com/content_CVPR_2020/papers/Fan_FGN_Fully_Guided_Network_for_Few-Shot_Instance_Segmentation_CVPR_2020_paper.pdf) | CVPR(2020) | [code]
 | DoG-BConvLSTM | [On the Texture Bias for Few-Shot CNN Segmentation](https://arxiv.org/abs/2003.04052) | arXiv(2020) | [TensorFlow](https://github.com/rezazad68/fewshot-segmentation)
 | SG-One | [SG-One: Similarity Guidance Network for One-Shot Semantic Segmentation](https://arxiv.org/abs/1810.09091) | ITC(2020) | [PyTorch](https://github.com/xiaomengyc/SG-One)
 | LTM | [A New Local Transformation Module for Few-Shot Segmentation](https://arxiv.org/abs/1910.05886) | ICMM(2020) | [code]
+> More information can be found in [Few-Shot-Semantic-Segmentation-Papers](https://github.com/xiaomengyc/Few-Shot-Semantic-Segmentation-Papers).
 
 ## Few-Shot Learning
 | Title | Paper | Conf | Code |
@@ -151,8 +152,8 @@ There are paper with code and note in terms of deep learning.
 | [ImageTransformer](https://gojay.top/2020/05/15/Image-Transformer/) | [Image Transformer](https://arxiv.org/abs/1802.05751) | arXiv(2018) | [code]
 
 ## Survey
-| Title | Paper | Conf | Code |
-|:--------|:--------:|:--------:|:--------:|
-| [3D-Detection-Survey-2019] | [A Survey on 3D Object Detection Methods for Autonomous Driving Applications](http://wrap.warwick.ac.uk/114314/1/WRAP-survey-3D-object-detection-methods-autonomous-driving-applications-Arnold-2019.pdf) | ITS(2019) | [code]
-| [FSL-Survey-2019](https://gojay.top/2020/07/07/FSL-Survey-2019/) | [Generalizing from a Few Examples: A Survey on Few-Shot Learning](https://arxiv.org/abs/1904.05046) | CSUR(2019) | [code]
-| [MOT-Survey-2020] | [Deep Learning in Video Multi-Object Tracking: A Survey](https://arxiv.org/abs/1907.12740) | Neurocomputing(2020) | [code]
+| Title | Paper | Conf |
+|:--------|:--------:|:--------:|
+| 3D-Detection-Survey-2019 | [A Survey on 3D Object Detection Methods for Autonomous Driving Applications](http://wrap.warwick.ac.uk/114314/1/WRAP-survey-3D-object-detection-methods-autonomous-driving-applications-Arnold-2019.pdf) | ITS(2019)
+| [FSL-Survey-2019](https://gojay.top/2020/07/07/FSL-Survey-2019/) | [Generalizing from a Few Examples: A Survey on Few-Shot Learning](https://arxiv.org/abs/1904.05046) | CSUR(2019)
+| MOT-Survey-2020 | [Deep Learning in Video Multi-Object Tracking: A Survey](https://arxiv.org/abs/1907.12740) | Neurocomputing(2020)
