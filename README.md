@@ -1,4 +1,4 @@
-# DeepLearning-pwcn
+# DeepLearning-pwcn [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 There are paper with code and note in terms of deep learning.
 
 - [Classification](#Image-Classification)
