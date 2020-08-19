@@ -24,9 +24,8 @@ There are paper with code and note in terms of deep learning.
         - Fast R-CNN
         - Faster R-CNN
         - FPN
-        - Mask R-CNN
-- [Detection-3D](#3D-Object-Detection)
-    - PV-RCNN
+- [Segmentation](#Object-Segmentation)
+    - Mask R-CNN
 - [Tracking](#Object-Tracking)
     - MOT
         - SORT
@@ -55,6 +54,8 @@ There are paper with code and note in terms of deep learning.
     - FGN(Fully Guided Network)
     - DoG-BConvLSTM
     - LTM(Local Transformation Module)
+- [Detection-3D](#3D-Object-Detection)
+    - PV-RCNN
 - [FSL](#Few-Shot-Learning)
     - RN(Relation Network)
 - [GAN](#Generative-Adversarial-Network)
@@ -93,15 +94,14 @@ There are paper with code and note in terms of deep learning.
 | YOLO | [You Only Look Once: Unified, Real-Time Object Detection](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf) | CVPR(2016) | [code]
 | YOLOv2 | [YOLO9000: Better, Faster, Stronger](http://openaccess.thecvf.com/content_cvpr_2017/papers/Redmon_YOLO9000_Better_Faster_CVPR_2017_paper.pdf) | CVPR(2017) | [code]
 | FPN | [Feature Pyramid Networks for Object Detection](http://openaccess.thecvf.com/content_cvpr_2017/papers/Lin_Feature_Pyramid_Networks_CVPR_2017_paper.pdf) | CVPR(2017) | [code]
-| Mask R-CNN | [Mask R-CNN](http://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf) | ICCV(2017) | [PyTorch](https://github.com/facebookresearch/detectron2)
 | YOLOv3 | [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767) | arXiv(2018) | [Offical](https://github.com/pjreddie/darknet)
 | YOLOv4 | [YOLOv4: Optimal Speed and Accuracy of Object Detection](https://arxiv.org/abs/2004.10934) | arXiv(2020) | [Offical](https://github.com/AlexeyAB/darknet)
 > More information can be found in [awesome-object-detection](https://github.com/amusi/awesome-object-detection).
 
-## 3D Object Detection
+## Object Segmentation
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
-| [PV-RCNN](https://gojay.top/2020/06/23/PV-RCNN/) | [PV-RCNN: Point-Voxel Feature Set Abstraction for 3D Object Detection](http://openaccess.thecvf.com/content_CVPR_2020/papers/Shi_PV-RCNN_Point-Voxel_Feature_Set_Abstraction_for_3D_Object_Detection_CVPR_2020_paper.pdf) | CVPR(2020) | [PyTorch](https://github.com/sshaoshuai/PV-RCNN)
+| [Mask R-CNN](https://gojay.top/2020/08/17/Mask-R-CNN/) | [Mask R-CNN](http://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf) | ICCV(2017) | [PyTorch](https://github.com/facebookresearch/detectron2)
 
 ## Object Tracking
 | Title | Paper | Conf | Code |
@@ -135,6 +135,11 @@ There are paper with code and note in terms of deep learning.
 | DoG-BConvLSTM | [On the Texture Bias for Few-Shot CNN Segmentation](https://arxiv.org/abs/2003.04052) | arXiv(2020) | [TensorFlow](https://github.com/rezazad68/fewshot-segmentation)
 | [LTM](https://gojay.top/2020/07/29/LTM/) | [A New Local Transformation Module for Few-Shot Segmentation](https://arxiv.org/abs/1910.05886) | ICMM(2020) | [code]
 > More information can be found in [Few-Shot-Semantic-Segmentation-Papers](https://github.com/xiaomengyc/Few-Shot-Semantic-Segmentation-Papers).
+
+## 3D Object Detection
+| Title | Paper | Conf | Code |
+|:--------|:--------:|:--------:|:--------:|
+| [PV-RCNN](https://gojay.top/2020/06/23/PV-RCNN/) | [PV-RCNN: Point-Voxel Feature Set Abstraction for 3D Object Detection](http://openaccess.thecvf.com/content_CVPR_2020/papers/Shi_PV-RCNN_Point-Voxel_Feature_Set_Abstraction_for_3D_Object_Detection_CVPR_2020_paper.pdf) | CVPR(2020) | [PyTorch](https://github.com/sshaoshuai/PV-RCNN)
 
 ## Few-Shot Learning
 | Title | Paper | Conf | Code |
