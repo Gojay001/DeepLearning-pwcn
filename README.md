@@ -10,6 +10,7 @@ There are paper with code and note in terms of deep learning.
     - ResNet
     - Inception-v4
     - DenseNet
+    - DLA(Deep Layer Aggregation)
     - ShuffleNet
     - MobileNetV3
 - [Detection](#Object-Detection)
@@ -18,6 +19,7 @@ There are paper with code and note in terms of deep learning.
         - YOLO
         - YOLOv2
         - YOLOv3
+        - CornerNet
         - YOLOv4
     - Two-stage
         - R-CNN
@@ -35,6 +37,7 @@ There are paper with code and note in terms of deep learning.
         - JRMOT
         - Tracklet
         - FairMOT
+        - DMCT(Deep Multi-Camera Tracking)
     - VOT
         - DepthTrack
         - BinocularTrack
@@ -52,8 +55,11 @@ There are paper with code and note in terms of deep learning.
     - AMP(Adaptive Masked Proxies)
     - CRNet(Cross-Reference Network)
     - FGN(Fully Guided Network)
-    - DoG-BConvLSTM
+    - OTB(On the Texture Bias)
     - LTM(Local Transformation Module)
+    - SimPropNet(Similarity Propagation)
+    - PFENet(Prior Guided Feature Enrichment Network)
+    - PMMs(Prototype Mixture Models)
 - [Detection-3D](#3D-Object-Detection)
     - PV-RCNN
 - [FSL](#Few-Shot-Learning)
@@ -67,8 +73,6 @@ There are paper with code and note in terms of deep learning.
     - FSL-Survey-2019
     - MOT-Survey-2020
 
-## Paper
-
 ## Image Classification
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
@@ -80,6 +84,7 @@ There are paper with code and note in terms of deep learning.
 | [ResNet](https://gojay.top/2019/09/08/ResNet/) | [Deep Residual Learning for Image Recognition](http://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf) | CVPR(2016) | [PyTorch](https://github.com/Gojay001/DeepLearning-pwcn/tree/master/Classification/ResNet/Code)
 | Inception-v4 | [Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning](https://www.aaai.org/ocs/index.php/AAAI/AAAI17/paper/viewFile/14806/14311) | AAAI(2017) | [code]
 | DenseNet | [Densely Connected Convolutional Networks](http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.pdf) | CVPR(2017) | [code]
+| DLA | [Deep Layer Aggregation](https://openaccess.thecvf.com/content_cvpr_2018/papers/Yu_Deep_Layer_Aggregation_CVPR_2018_paper.pdf) | CVPR(2018) | [PyTorch](https://github.com/ucbdrive/dla)
 | ShuffleNet | [ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_ShuffleNet_An_Extremely_CVPR_2018_paper.pdf) | CVPR(2018) | [code]
 | MobileNetV3 | [Searching for MobileNetV3](http://openaccess.thecvf.com/content_ICCV_2019/papers/Howard_Searching_for_MobileNetV3_ICCV_2019_paper.pdf) | ICCV(2019) | [code]
 > More information can be found in [Awesome - Image Classification](https://github.com/weiaicunzai/awesome-image-classification).
@@ -95,6 +100,7 @@ There are paper with code and note in terms of deep learning.
 | YOLOv2 | [YOLO9000: Better, Faster, Stronger](http://openaccess.thecvf.com/content_cvpr_2017/papers/Redmon_YOLO9000_Better_Faster_CVPR_2017_paper.pdf) | CVPR(2017) | [code]
 | FPN | [Feature Pyramid Networks for Object Detection](http://openaccess.thecvf.com/content_cvpr_2017/papers/Lin_Feature_Pyramid_Networks_CVPR_2017_paper.pdf) | CVPR(2017) | [code]
 | YOLOv3 | [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767) | arXiv(2018) | [Offical](https://github.com/pjreddie/darknet)
+| CornerNet | [CornerNet: Detecting Objects as Paired Keypoints](https://openaccess.thecvf.com/content_ECCV_2018/papers/Hei_Law_CornerNet_Detecting_Objects_ECCV_2018_paper.pdf) | ECCV(2018) | [PyTorch](https://github.com/princeton-vl/CornerNet)
 | YOLOv4 | [YOLOv4: Optimal Speed and Accuracy of Object Detection](https://arxiv.org/abs/2004.10934) | arXiv(2020) | [Offical](https://github.com/AlexeyAB/darknet)
 > More information can be found in [awesome-object-detection](https://github.com/amusi/awesome-object-detection).
 
@@ -120,6 +126,7 @@ There are paper with code and note in terms of deep learning.
 | [Tracklet](https://gojay.top/2020/03/26/Tracklet/) | [Multi-object Tracking via End-to-end Tracklet Searching and Ranking](https://arxiv.org/abs/2003.02795) | arXiv(2020) | [code]
 | [TSDM](https://gojay.top/2020/05/23/TSDM/) | [TSDM: Tracking by SiamRPN++ with a Depth-refiner and a Mask-generator](https://arxiv.org/abs/2005.04063) | arXiv(2020) | [PyTorch](https://github.com/Gojay001/TSDM)
 | [FairMOT](https://gojay.top/2020/05/25/FairMOT/) | [A Simple Baseline for Multi-Object Tracking](https://arxiv.org/abs/2004.01888) | arXiv(2020) | [PyTorch](https://github.com/Gojay001/FairMOT)
+| DMCT | [Real-time 3D Deep Multi-Camera Tracking](https://arxiv.org/abs/2003.11753) | arXiv(2020) | [code]
 
 ## Few-Shot Segmentation
 | Title | Paper | Conf | Code |
@@ -132,8 +139,11 @@ There are paper with code and note in terms of deep learning.
 | AMP | [AMP: Adaptive Masked Proxies for Few-Shot Segmentation](https://openaccess.thecvf.com/content_ICCV_2019/papers/Siam_AMP_Adaptive_Masked_Proxies_for_Few-Shot_Segmentation_ICCV_2019_paper.pdf) | ICCV(2019) | [Pytorch](https://github.com/MSiam/AdaptiveMaskedProxies)
 | [CRNet](https://gojay.top/2020/07/10/CRNet/) | [CRNet: Cross-Reference Networks for Few-Shot Segmentation](https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_CRNet_Cross-Reference_Networks_for_Few-Shot_Segmentation_CVPR_2020_paper.pdf) | CVPR(2020) | [code]
 | FGN | [FGN: Fully Guided Network for Few-Shot Instance Segmentation](https://openaccess.thecvf.com/content_CVPR_2020/papers/Fan_FGN_Fully_Guided_Network_for_Few-Shot_Instance_Segmentation_CVPR_2020_paper.pdf) | CVPR(2020) | [code]
-| DoG-BConvLSTM | [On the Texture Bias for Few-Shot CNN Segmentation](https://arxiv.org/abs/2003.04052) | arXiv(2020) | [TensorFlow](https://github.com/rezazad68/fewshot-segmentation)
+| OTB | [On the Texture Bias for Few-Shot CNN Segmentation](https://arxiv.org/abs/2003.04052) | arXiv(2020) | [TensorFlow](https://github.com/rezazad68/fewshot-segmentation)
 | [LTM](https://gojay.top/2020/07/29/LTM/) | [A New Local Transformation Module for Few-Shot Segmentation](https://arxiv.org/abs/1910.05886) | ICMM(2020) | [code]
+| SimPropNet | [SimPropNet: Improved Similarity Propagation for Few-shot Image Segmentation](https://arxiv.org/abs/2004.15014) | IJCAI(2020) | [code]
+| PFENet | [PFENet: Prior Guided Feature Enrichment Network for Few-shot Segmentation](https://arxiv.org/abs/2008.01449) | TPAMI(2020) | [PyTorch](https://github.com/Jia-Research-Lab/PFENet)
+| PMMs | [Prototype Mixture Models for Few-shot Semantic Segmentation](https://arxiv.org/abs/2008.03898) | ECCV(2020) | [PyTorch](https://github.com/Yang-Bob/PMMs)
 > More information can be found in [Few-Shot-Semantic-Segmentation-Papers](https://github.com/xiaomengyc/Few-Shot-Semantic-Segmentation-Papers).
 
 ## 3D Object Detection
