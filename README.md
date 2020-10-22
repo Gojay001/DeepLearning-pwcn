@@ -20,6 +20,7 @@ There are paper with code and note in terms of deep learning.
         - YOLOv2
         - YOLOv3
         - CornerNet
+        - CenterNet
         - YOLOv4
     - Two-stage
         - R-CNN
@@ -27,7 +28,15 @@ There are paper with code and note in terms of deep learning.
         - Faster R-CNN
         - FPN
 - [Segmentation](#Object-Segmentation)
+    - FCN
+    - U-Net
+    - Seg-Net
+    - DeepLab V1
+    - PSPNet
+    - DeepLab V2
     - Mask R-CNN
+    - DeepLab V3
+    - DeepLab V3+
 - [Tracking](#Object-Tracking)
     - MOT
         - SORT
@@ -48,11 +57,13 @@ There are paper with code and note in terms of deep learning.
         - TSDM
 - [FSS](#Few-Shot-Segmentation)
     - OSLSM
+    - co-FCN
+    - AMP(Adaptive Masked Proxies)
     - SG-One(Similarity Guidance)
     - CENet(Combinatorial Embedding Network)
     - PANet(Prototype Alignment)
+    - CANet(Class Agnostic)
     - PGNet(Pyramid Graph Network)
-    - AMP(Adaptive Masked Proxies)
     - CRNet(Cross-Reference Network)
     - FGN(Fully Guided Network)
     - OTB(On the Texture Bias)
@@ -60,6 +71,7 @@ There are paper with code and note in terms of deep learning.
     - SimPropNet(Similarity Propagation)
     - PFENet(Prior Guided Feature Enrichment Network)
     - PMMs(Prototype Mixture Models)
+    - GFS-Seg(Generalized Few-Shot)
 - [Detection-3D](#3D-Object-Detection)
     - PV-RCNN
 - [FSL](#Few-Shot-Learning)
@@ -101,13 +113,22 @@ There are paper with code and note in terms of deep learning.
 | FPN | [Feature Pyramid Networks for Object Detection](http://openaccess.thecvf.com/content_cvpr_2017/papers/Lin_Feature_Pyramid_Networks_CVPR_2017_paper.pdf) | CVPR(2017) | [code]
 | YOLOv3 | [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767) | arXiv(2018) | [Offical](https://github.com/pjreddie/darknet)
 | CornerNet | [CornerNet: Detecting Objects as Paired Keypoints](https://openaccess.thecvf.com/content_ECCV_2018/papers/Hei_Law_CornerNet_Detecting_Objects_ECCV_2018_paper.pdf) | ECCV(2018) | [PyTorch](https://github.com/princeton-vl/CornerNet)
+| CenterNet | [Objects as Points](https://arxiv.org/abs/1904.07850) | arXiv(2019) | [PyTorch](https://github.com/xingyizhou/CenterNet)
 | YOLOv4 | [YOLOv4: Optimal Speed and Accuracy of Object Detection](https://arxiv.org/abs/2004.10934) | arXiv(2020) | [Offical](https://github.com/AlexeyAB/darknet)
 > More information can be found in [awesome-object-detection](https://github.com/amusi/awesome-object-detection).
 
 ## Object Segmentation
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
-| [Mask R-CNN](https://gojay.top/2020/08/17/Mask-R-CNN/) | [Mask R-CNN](http://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf) | ICCV(2017) | [PyTorch](https://github.com/facebookresearch/detectron2)
+| FCN | [Fully convolutional networks for semantic segmentation](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Long_Fully_Convolutional_Networks_2015_CVPR_paper.pdf) | CVPR(2015) | [PyTorch](https://github.com/yassouali/pytorch_segmentation)
+| U-Net | [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597) | MICCAI(2015) | [PyTorch](https://github.com/yassouali/pytorch_segmentation)
+| Seg-Net | [SegNet: A Deep Convolutional Encoder-Decoder Architecture for Robust Semantic Pixel-Wise Labelling](https://arxiv.org/abs/1505.07293) | arXiv(2015) | [PyTorch](https://github.com/yassouali/pytorch_segmentation)
+| DeepLab V1 | [Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs](https://arxiv.org/abs/1412.7062) | arXiv(2014) / ICLR(2015) | [PyTorch](https://github.com/yassouali/pytorch_segmentation)
+| PSPNet | [Pyramid Scene Parsing Network](https://openaccess.thecvf.com/content_cvpr_2017/papers/Zhao_Pyramid_Scene_Parsing_CVPR_2017_paper.pdf) | CVPR(2017) | [PyTorch](https://github.com/yassouali/pytorch_segmentation)
+| DeepLab V2 | [DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs](https://arxiv.org/abs/1606.00915) | arXiv(2016) / TPAMI(2017) | [PyTorch](https://github.com/yassouali/pytorch_segmentation)
+| [Mask R-CNN](https://gojay.top/2020/08/17/Mask-R-CNN/) | [Mask R-CNN](http://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf) | ICCV / TPAMI(2017) | [PyTorch](https://github.com/facebookresearch/detectron2)
+| DeepLab V3 | [Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/abs/1706.05587) | arXiv(2017) | [PyTorch](https://github.com/yassouali/pytorch_segmentation)
+| DeepLab V3+ | [Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation](https://openaccess.thecvf.com/content_ECCV_2018/papers/Liang-Chieh_Chen_Encoder-Decoder_with_Atrous_ECCV_2018_paper.pdf) | ECCV(2018) | [PyTorch](https://github.com/yassouali/pytorch_segmentation)
 
 ## Object Tracking
 | Title | Paper | Conf | Code |
@@ -131,19 +152,22 @@ There are paper with code and note in terms of deep learning.
 ## Few-Shot Segmentation
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
-| OSLSM | [One-Shot Learning for Semantic Segmentation](https://arxiv.org/abs/1709.03410) | arXiv(2017) | [Caffe](https://github.com/lzzcd001/OSLSM)
-| SG-One | [SG-One: Similarity Guidance Network for One-Shot Semantic Segmentation](https://arxiv.org/abs/1810.09091) | arXiv(2018) / ITC(2020) | [PyTorch](https://github.com/xiaomengyc/SG-One)
+| [OSLSM](https://gojay.top/2020/10/19/OSLSM/) | [One-Shot Learning for Semantic Segmentation](https://arxiv.org/abs/1709.03410) | BMVC(2017) | [Caffe](https://github.com/lzzcd001/OSLSM)
+| [co-FCN](https://gojay.top/2020/10/19/co-FCN/) | [Conditional Networks for Few-Shot Semantic Segmentation](https://openreview.net/pdf?id=SkMjFKJwG) | ICLR(2018) | [code]
+| AMP | [AMP: Adaptive Masked Proxies for Few-Shot Segmentation](https://openaccess.thecvf.com/content_ICCV_2019/papers/Siam_AMP_Adaptive_Masked_Proxies_for_Few-Shot_Segmentation_ICCV_2019_paper.pdf) | ICCV(2019) | [Pytorch](https://github.com/MSiam/AdaptiveMaskedProxies)
+| [SG-One](https://gojay.top/2020/10/20/SG-One/) | [SG-One: Similarity Guidance Network for One-Shot Semantic Segmentation](https://arxiv.org/abs/1810.09091) | arXiv(2018) / TCYB(2020) | [PyTorch](https://github.com/xiaomengyc/SG-One)
 | CENet | [Learning Combinatorial Embedding Networks for Deep Graph Matching](https://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Learning_Combinatorial_Embedding_Networks_for_Deep_Graph_Matching_ICCV_2019_paper.pdf) | ICCV(2019) | [Pytorch](https://github.com/Thinklab-SJTU/PCA-GM)
 | PANet | [PANet: Few-Shot Image Semantic Segmentation with Prototype Alignment](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_PANet_Few-Shot_Image_Semantic_Segmentation_With_Prototype_Alignment_ICCV_2019_paper.pdf) | ICCV(2019) | [PyTorch](https://github.com/kaixin96/PANet)
+| [CANet](https://gojay.top/2020/10/20/CANet/) | [CANet: Class-Agnostic Segmentation Networks with Iterative Refinement and Attentive Few-Shot Learning](https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhang_CANet_Class-Agnostic_Segmentation_Networks_With_Iterative_Refinement_and_Attentive_Few-Shot_CVPR_2019_paper.pdf) | CVPR(2019) | [PyTorch](https://github.com/icoz69/CaNet)
 | [PGNet](https://gojay.top/2020/07/28/PGNet/) | [Pyramid Graph Networks with Connection Attentions for Region-Based One-Shot Semantic Segmentation](https://openaccess.thecvf.com/content_ICCV_2019/papers/Zhang_Pyramid_Graph_Networks_With_Connection_Attentions_for_Region-Based_One-Shot_Semantic_ICCV_2019_paper.pdf) | ICCV(2019) | [code]
-| AMP | [AMP: Adaptive Masked Proxies for Few-Shot Segmentation](https://openaccess.thecvf.com/content_ICCV_2019/papers/Siam_AMP_Adaptive_Masked_Proxies_for_Few-Shot_Segmentation_ICCV_2019_paper.pdf) | ICCV(2019) | [Pytorch](https://github.com/MSiam/AdaptiveMaskedProxies)
 | [CRNet](https://gojay.top/2020/07/10/CRNet/) | [CRNet: Cross-Reference Networks for Few-Shot Segmentation](https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_CRNet_Cross-Reference_Networks_for_Few-Shot_Segmentation_CVPR_2020_paper.pdf) | CVPR(2020) | [code]
 | FGN | [FGN: Fully Guided Network for Few-Shot Instance Segmentation](https://openaccess.thecvf.com/content_CVPR_2020/papers/Fan_FGN_Fully_Guided_Network_for_Few-Shot_Instance_Segmentation_CVPR_2020_paper.pdf) | CVPR(2020) | [code]
 | OTB | [On the Texture Bias for Few-Shot CNN Segmentation](https://arxiv.org/abs/2003.04052) | arXiv(2020) | [TensorFlow](https://github.com/rezazad68/fewshot-segmentation)
-| [LTM](https://gojay.top/2020/07/29/LTM/) | [A New Local Transformation Module for Few-Shot Segmentation](https://arxiv.org/abs/1910.05886) | ICMM(2020) | [code]
+| [LTM](https://gojay.top/2020/07/29/LTM/) | [A New Local Transformation Module for Few-Shot Segmentation](https://arxiv.org/abs/1910.05886) | MMMM(2020) | [code]
 | SimPropNet | [SimPropNet: Improved Similarity Propagation for Few-shot Image Segmentation](https://arxiv.org/abs/2004.15014) | IJCAI(2020) | [code]
 | PFENet | [PFENet: Prior Guided Feature Enrichment Network for Few-shot Segmentation](https://arxiv.org/abs/2008.01449) | TPAMI(2020) | [PyTorch](https://github.com/Jia-Research-Lab/PFENet)
 | PMMs | [Prototype Mixture Models for Few-shot Semantic Segmentation](https://arxiv.org/abs/2008.03898) | ECCV(2020) | [PyTorch](https://github.com/Yang-Bob/PMMs)
+| GFS-Seg | [Generalized Few-Shot Semantic Segmentation](https://arxiv.org/abs/2010.05210) | arXiv(2020) | [code]
 > More information can be found in [Few-Shot-Semantic-Segmentation-Papers](https://github.com/xiaomengyc/Few-Shot-Semantic-Segmentation-Papers).
 
 ## 3D Object Detection
