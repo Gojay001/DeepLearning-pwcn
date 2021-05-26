@@ -39,6 +39,8 @@ There are paper with code and note in terms of deep learning.
     - DeepLab V2
     - Mask R-CNN
     - DeepLab V3
+    - PointNet
+    - PointNet++
     - DeepLab V3+
     - DGCNet
 - [Tracking](#Object-Tracking)
@@ -55,11 +57,17 @@ There are paper with code and note in terms of deep learning.
     - VOT
         - DepthTrack
         - BinocularTrack
+        - SiamFC
+        - SiamRPN
         - SiamRPN++
         - SiamMask
         - GlobalTrack
         - PAMCC-AOT
+        - SiamCAR
+        - SiamBAN
+        - SiamAttn
         - TSDM
+        - RE-SiamNets
 - [FSS](#Few-Shot-Segmentation)
     - OSLSM
     - co-FCN
@@ -80,11 +88,16 @@ There are paper with code and note in terms of deep learning.
     - GFS-Seg(Generalized Few-Shot)
     - SCL(Self-Corss Learning)
     - ASGNet(Adaptive Superpixel-guided Network)
+- [Attention](#Attention-or-Transformer)
+    - Non-local
+    - Swin Transformer
 - [RGBD-SOT](#Salient-Object-Detection)
     - UC-Net
     - JL-DCF(Joint Learning and Densely-Cooperative Fusion)
     - SA-Gate(Separation-and-Aggregation Gate)
     - BiANet(Bilateral Attention Network)
+- [Unsupervised](#Unsupervised Learning)
+    - SimSiam
 - [Detection-3D](#3D-Object-Detection)
     - PV-RCNN
 - [FSL](#Few-Shot-Learning)
@@ -93,6 +106,13 @@ There are paper with code and note in terms of deep learning.
     - BeautyGAN
 - [Image Generation](#Image-Generation)
     - ImageTransformer
+- [Optimization](#Optimization)
+    - ReLU
+    - Momentum
+    - Dropout
+    - Adam
+    - BN
+    - GDoptimization
 - [Survey](#Survey)
     - 3D-Detection-Survey-2019
     - FSL-Survey-2019
@@ -144,6 +164,8 @@ There are paper with code and note in terms of deep learning.
 | DeepLab V2 | [DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs](https://arxiv.org/abs/1606.00915) | arXiv(2016) / TPAMI(2017) | [PyTorch](https://github.com/yassouali/pytorch_segmentation)
 | [Mask R-CNN](https://gojay.top/2020/08/17/Mask-R-CNN/) | [Mask R-CNN](http://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf) | ICCV / TPAMI(2017) | [PyTorch](https://github.com/facebookresearch/detectron2)
 | DeepLab V3 | [Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/abs/1706.05587) | arXiv(2017) | [PyTorch](https://github.com/yassouali/pytorch_segmentation)
+| PointNet | [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](https://openaccess.thecvf.com/content_cvpr_2017/papers/Qi_PointNet_Deep_Learning_CVPR_2017_paper.pdf) | CVPR(2017) | [PyTorch](https://github.com/fxia22/pointnet.pytorch)
+| PointNet++ | [PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space](https://proceedings.neurips.cc/paper/2017/file/d8bf84be3800d12f74d8b05e9b89836f-Paper.pdf) | NIPS(2017) | [PyTorch](https://github.com/erikwijmans/Pointnet2_PyTorch)
 | DeepLab V3+ | [Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation](https://openaccess.thecvf.com/content_ECCV_2018/papers/Liang-Chieh_Chen_Encoder-Decoder_with_Atrous_ECCV_2018_paper.pdf) | ECCV(2018) | [PyTorch](https://github.com/yassouali/pytorch_segmentation)
 | DGCNet | [Dual Graph Convolutional Network for Semantic Segmentation](https://arxiv.org/pdf/1909.06121.pdf) | BMVC(2019) | [PyTorch](https://github.com/lxtGH/GALD-DGCNet)
 
@@ -154,10 +176,15 @@ There are paper with code and note in terms of deep learning.
 | DepthTrack | [Real-time depth-based tracking using a binocular camera](https://github.com/Gojay001/DeepLearning-pwcn/tree/master/Tracking/Binocular%20camera/DepthTrack.pdf) | WCICA(2016) | [code]
 | [DeepSORT](https://gojay.top/2020/06/20/DeepSORT/) | [Simple Online and Realtime Tracking with a Deep Association Metric](https://arxiv.org/abs/1703.07402) | ICIP(2017) | [PyTorch](https://github.com/nwojke/deep_sort)
 | BinocularTrack | [Research on Target Tracking Algorithm Based on Parallel Binocular Camera](https://github.com/Gojay001/DeepLearning-pwcn/blob/master/Tracking/Binocular%20camera/BinocularTrack.pdf) | ITAIC(2019) | [code]
+| SiamFC| [Fully-Convolutional Siamese Networks for Object Tracking](https://arxiv.org/abs/1606.09549) | ECCV(2016) | [PyTorch](https://github.com/zllrunning/SiameseX.PyTorch)
+| SiamRPN| [High Performance Visual Tracking with Siamese Region Proposal Network](https://openaccess.thecvf.com/content_cvpr_2018/papers/Li_High_Performance_Visual_CVPR_2018_paper.pdf) | CVPR(2018) | [PyTorch](https://github.com/huanglianghua/siamrpn-pytorch)
 | [SiamRPN++](https://gojay.top/2020/05/09/SiamRPN++/) | [SiamRPN++: Evolution of Siamese Visual Tracking with Very Deep Networks](http://openaccess.thecvf.com/content_CVPR_2019/papers/Li_SiamRPN_Evolution_of_Siamese_Visual_Tracking_With_Very_Deep_Networks_CVPR_2019_paper.pdf) | CVPR(2019) | [PyTorch](https://github.com/STVIR/pysot)
 | [SiamMask](https://gojay.top/2019/11/26/SiamMask/) | [Fast Online Object Tracking and Segmentation: A Unifying Approach](http://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Fast_Online_Object_Tracking_and_Segmentation_A_Unifying_Approach_CVPR_2019_paper.pdf) | CVPR(2019) | [PyTorch](https://github.com/Gojay001/SiamMask)
 | [Tracktor](https://gojay.top/2019/11/09/Tracktor/) | [Tracking without bells and whistles](https://arxiv.org/abs/1903.05625) | ICCV(2019) | [PyTorch](https://github.com/Gojay001/tracking_wo_bnw)
 | [GlobalTrack](https://gojay.top/2020/01/04/GlobalTrack/) | [GlobalTrack: A Simple and Strong Baseline for Long-term Tracking](https://arxiv.org/abs/1912.08531) | AAAI(2020) | [PyTorch](https://github.com/huanglianghua/GlobalTrack)
+| SiamCAR | [SiamCAR: Siamese Fully Convolutional Classification and Regression for Visual Tracking](https://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_SiamCAR_Siamese_Fully_Convolutional_Classification_and_Regression_for_Visual_Tracking_CVPR_2020_paper.pdf) | CVPR(2020) | [PyTorch](https://github.com/ohhhyeahhh/SiamCAR)
+| SiamBAN | [Siamese Box Adaptive Network for Visual Tracking](https://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_Siamese_Box_Adaptive_Network_for_Visual_Tracking_CVPR_2020_paper.pdf) | CVPR(2020) | [PyTorch](https://github.com/hqucv/siamban)
+| SiamAttn | [Deformable Siamese Attention Networks for Visual Object Tracking](https://openaccess.thecvf.com/content_CVPR_2020/papers/Yu_Deformable_Siamese_Attention_Networks_for_Visual_Object_Tracking_CVPR_2020_paper.pdf) | CVPR(2020) | [PyTorch](https://github.com/msight-tech/research-siamattn)
 | [PAMCC-AOT](https://gojay.top/2020/02/25/PAMCC-AOT/) | [Pose-Assisted Multi-Camera Collaboration for Active Object Tracking](https://arxiv.org/abs/2001.05161) | AAAI(2020) | [code]
 | [FFT](https://gojay.top/2020/03/05/FFT-Flow-Fuse-Tracker/) | [Multiple Object Tracking by Flowing and Fusing](https://arxiv.org/abs/2001.11180) | arXiv(2020) | [code]
 | [JRMOT](https://gojay.top/2020/02/28/JRMOT/) | [JRMOT: A Real-Time 3D Multi-Object Tracker and a New Large-Scale Dataset](https://arxiv.org/abs/2002.08397) | arXiv(2020) | [code]
@@ -165,6 +192,7 @@ There are paper with code and note in terms of deep learning.
 | [TSDM](https://gojay.top/2020/05/23/TSDM/) | [TSDM: Tracking by SiamRPN++ with a Depth-refiner and a Mask-generator](https://arxiv.org/abs/2005.04063) | arXiv(2020) | [PyTorch](https://github.com/Gojay001/TSDM)
 | [FairMOT](https://gojay.top/2020/05/25/FairMOT/) | [A Simple Baseline for Multi-Object Tracking](https://arxiv.org/abs/2004.01888) | arXiv(2020) | [PyTorch](https://github.com/Gojay001/FairMOT)
 | DMCT | [Real-time 3D Deep Multi-Camera Tracking](https://arxiv.org/abs/2003.11753) | arXiv(2020) | [code]
+| RE-SiamNets | [Rotation Equivariant Siamese Networks for Tracking](https://arxiv.org/abs/2012.13078) | CVPR(2021) | [PyTorch](https://github.com/dkgupta90/re-siamnet)
 | CenterPoint | [Center-based 3D Object Detection and Tracking](https://arxiv.org/pdf/2006.11275.pdf) | CVPR(2021) | [PyTorch](https://github.com/tianweiy/CenterPoint)
 
 ## Few-Shot Segmentation
@@ -191,13 +219,24 @@ There are paper with code and note in terms of deep learning.
 | ASGNet | [Adaptive Prototype Learning and Allocation for Few-Shot Segmentation](https://arxiv.org/pdf/2104.01893.pdf) | CVPR(2021) | [PyTorch](https://github.com/Reagan1311/ASGNet)
 > More information can be found in [Few-Shot-Semantic-Segmentation-Papers](https://github.com/xiaomengyc/Few-Shot-Semantic-Segmentation-Papers).
 
+## Attention or Transformer
+| Title | Paper | Conf | Code |
+|:--------|:--------:|:--------:|:--------:|
+| Non-local | [Non-local Neural Networks](https://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_Non-Local_Neural_Networks_CVPR_2018_paper.pdf) | CVPR(2018) | [PyTorch](https://github.com/facebookresearch/video-nonlocal-net)
+| Swin Transformer | [Swin Transformer: Hierarchical Vision Transformer using Shifted Windows](https://arxiv.org/abs/2103.14030) | arXiv(2021) | [PyTorch](https://github.com/microsoft/Swin-Transformer)
+
 ## Salient Object Detection
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
 | UC-Net | [UC-Net: Uncertainty Inspired RGB-D Saliency Detection via Conditional Variational Autoencoders](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_UC-Net_Uncertainty_Inspired_RGB-D_Saliency_Detection_via_Conditional_Variational_Autoencoders_CVPR_2020_paper.pdf) | CVPR(2020) | [PyTorch](https://github.com/JingZhang617/UCNet)
 | JL-DCF | [JL-DCF: Joint Learning and Densely-Cooperative Fusion Framework for RGB-D Salient Object Detection](https://openaccess.thecvf.com/content_CVPR_2020/papers/Fu_JL-DCF_Joint_Learning_and_Densely-Cooperative_Fusion_Framework_for_RGB-D_Salient_CVPR_2020_paper.pdf) | CVPR(2020) | [PyTorch](https://github.com/jiangyao-scu/JL-DCF-pytorch)
-| SA-Gate | [Bi-directional Cross-Modality Feature Propagation with Separation-and-Aggregation Gate for RGB-D Semantic Segmentation](https://arxiv.org/pdf/2007.09183.pdf) | ECCV(2020) | [Code](https://github.com/charlesCXK/RGBD_Semantic_Segmentation_PyTorch)
+| SA-Gate | [Bi-directional Cross-Modality Feature Propagation with Separation-and-Aggregation Gate for RGB-D Semantic Segmentation](https://arxiv.org/pdf/2007.09183.pdf) | ECCV(2020) | [PyTorch](https://github.com/charlesCXK/RGBD_Semantic_Segmentation_PyTorch)
 | BiANet | [Bilateral Attention Network for RGB-D Salient Object Detection](https://arxiv.org/pdf/2004.14582.pdf) | TIP(2021) | [Code]
+
+## Unsupervised Learning
+| Title | Paper | Conf | Code |
+|:--------|:--------:|:--------:|:--------:|
+| SimSiam | [Exploring Simple Siamese Representation Learning](https://arxiv.org/abs/2011.10566) | CVPR(2021) | [PyTorch](https://github.com/PatrickHua/SimSiam)
 
 ## 3D Object Detection
 | Title | Paper | Conf | Code |
@@ -218,6 +257,16 @@ There are paper with code and note in terms of deep learning.
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
 | [ImageTransformer](https://gojay.top/2020/05/15/Image-Transformer/) | [Image Transformer](https://arxiv.org/abs/1802.05751) | arXiv(2018) | [code]
+
+## Optimization
+| Title | Paper | Conf | Code |
+|:--------|:--------:|:--------:|:--------:|
+| ReLU | [Deep Sparse Rectifier Neural Networks](http://proceedings.mlr.press/v15/glorot11a/glorot11a.pdf) | JMLR(2011) | [code]
+| Momentum | [On the importance of initialization and momentum in deep learning](http://proceedings.mlr.press/v28/sutskever13.html) | ICML(2013) | [code]
+| Dropout | [Dropout: a simple way to prevent neural networks from overfitting](https://dl.acm.org/doi/10.5555/2627435.2670313) | JMLR(2014) | [code]
+| Adam | [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980) | ICLR(2015) | [code]
+| BN | [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167) | ICML(2015) | [code]
+| GDoptimization | [An overview of gradient descent optimization algorithms](https://arxiv.org/abs/1609.04747) | arXiv(2016) | [code]
 
 ## Survey
 | Title | Paper | Conf |
