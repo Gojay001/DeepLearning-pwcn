@@ -43,6 +43,9 @@ There are paper with code and note in terms of deep learning.
     - PointNet++
     - DeepLab V3+
     - DGCNet
+    - SETR
+    - Segmenter
+    - SegFormer
 - [Tracking](#Object-Tracking)
     - MOT
         - SORT
@@ -89,20 +92,25 @@ There are paper with code and note in terms of deep learning.
     - SCL(Self-Corss Learning)
     - ASGNet(Adaptive Superpixel-guided Network)
 - [Attention](#Attention-or-Transformer)
+    - Transformer
     - Non-local
+    - ViT
     - Swin Transformer
+    - ResT
+    - DS-Net
 - [RGBD-SOT](#Salient-Object-Detection)
     - UC-Net
     - JL-DCF(Joint Learning and Densely-Cooperative Fusion)
     - SA-Gate(Separation-and-Aggregation Gate)
     - BiANet(Bilateral Attention Network)
-- [Unsupervised](#Unsupervised Learning)
+- [Unsupervised](#Unsupervised-Learning)
     - SimSiam
 - [Detection-3D](#3D-Object-Detection)
     - PV-RCNN
 - [FSL](#Few-Shot-Learning)
     - RN(Relation Network)
 - [GAN](#Generative-Adversarial-Network)
+    - GAN
     - BeautyGAN
 - [Image Generation](#Image-Generation)
     - ImageTransformer
@@ -168,6 +176,9 @@ There are paper with code and note in terms of deep learning.
 | PointNet++ | [PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space](https://proceedings.neurips.cc/paper/2017/file/d8bf84be3800d12f74d8b05e9b89836f-Paper.pdf) | NIPS(2017) | [PyTorch](https://github.com/erikwijmans/Pointnet2_PyTorch)
 | DeepLab V3+ | [Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation](https://openaccess.thecvf.com/content_ECCV_2018/papers/Liang-Chieh_Chen_Encoder-Decoder_with_Atrous_ECCV_2018_paper.pdf) | ECCV(2018) | [PyTorch](https://github.com/yassouali/pytorch_segmentation)
 | DGCNet | [Dual Graph Convolutional Network for Semantic Segmentation](https://arxiv.org/pdf/1909.06121.pdf) | BMVC(2019) | [PyTorch](https://github.com/lxtGH/GALD-DGCNet)
+| SETR | [Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers](http://arxiv.org/abs/2012.15840) | CVPR(2021) | [PyTorch](https://github.com/fudan-zvg/SETR)
+| Segmenter | [Segmenter: Transformer for Semantic Segmentation](http://arxiv.org/abs/2105.05633) | arXiv(2021) | [PyTorch](https://github.com/rstrudel/segmenter)
+| SegFormer | [SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers](http://arxiv.org/abs/2105.15203) | arXiv(2021) | [PyTorch](https://github.com/NVlabs/SegFormer)
 
 ## Object Tracking
 | Title | Paper | Conf | Code |
@@ -222,8 +233,12 @@ There are paper with code and note in terms of deep learning.
 ## Attention or Transformer
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
+| Transformer | [Attention Is All You Need](http://arxiv.org/abs/1706.03762) | arXiv(2017) | [TensorFlow](https://github.com/tensorflow/tensor2tensor)
 | Non-local | [Non-local Neural Networks](https://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_Non-Local_Neural_Networks_CVPR_2018_paper.pdf) | CVPR(2018) | [PyTorch](https://github.com/facebookresearch/video-nonlocal-net)
+| ViT | [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](http://arxiv.org/abs/2010.11929) | arXiv(2020) | [PyTorch](https://github.com/google-research/vision_transformer)
 | Swin Transformer | [Swin Transformer: Hierarchical Vision Transformer using Shifted Windows](https://arxiv.org/abs/2103.14030) | arXiv(2021) | [PyTorch](https://github.com/microsoft/Swin-Transformer)
+| ResT | [ResT: An Efficient Transformer for Visual Recognition](http://arxiv.org/abs/2105.13677) | arXiv(2021) | [PyTorch](https://github.com/wofmanaf/ResT)
+| DS-Net | [Dual-stream Network for Visual Recognition](http://arxiv.org/abs/2105.14734) | arXiv(2021) | [code]
 
 ## Salient Object Detection
 | Title | Paper | Conf | Code |
@@ -251,7 +266,8 @@ There are paper with code and note in terms of deep learning.
 ## Generative Adversarial Network
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
-| BeautyGAN | [Beautygan: Instance-level facial makeup transfer with deep generative adversarial network](http://colalab.org/media/paper/BeautyGAN-camera-ready.pdf) | ACM(2018) | [TensorFlow](http://liusi-group.com/projects/BeautyGAN)
+| GAN | [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) | arXiv(2014) | [code]
+| BeautyGAN | [BeautyGAN: Instance-level Facial Makeup Transfer with Deep Generative Adversarial Network](http://liusi-group.com/pdf/BeautyGAN-camera-ready_2.pdf) | ACM MM(2018) | [TensorFlow](http://liusi-group.com/projects/BeautyGAN)
 
 ## Image Generation
 | Title | Paper | Conf | Code |
