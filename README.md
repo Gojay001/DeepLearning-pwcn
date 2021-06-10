@@ -42,10 +42,11 @@ There are paper with code and note in terms of deep learning.
     - PointNet
     - PointNet++
     - DeepLab V3+
-    - DGCNet
-    - SETR
+    - DGCNet(Dual GCN)
+    - SETR(SEgmentation TRansfomer)
     - Segmenter
     - SegFormer
+    - FTN(Fully Transformer Networks)
 - [Tracking](#Object-Tracking)
     - MOT
         - SORT
@@ -94,10 +95,13 @@ There are paper with code and note in terms of deep learning.
 - [Attention](#Attention-or-Transformer)
     - Transformer
     - Non-local
-    - ViT
+    - Image Transformer
+    - ViT(Vision Transformer)
     - Swin Transformer
     - ResT
-    - DS-Net
+    - DS-Net(Dual Stream Network)
+    - TransCNN
+    - Shuffle Transformer
 - [RGBD-SOT](#Salient-Object-Detection)
     - UC-Net
     - JL-DCF(Joint Learning and Densely-Cooperative Fusion)
@@ -112,8 +116,6 @@ There are paper with code and note in terms of deep learning.
 - [GAN](#Generative-Adversarial-Network)
     - GAN
     - BeautyGAN
-- [Image Generation](#Image-Generation)
-    - ImageTransformer
 - [Optimization](#Optimization)
     - ReLU
     - Momentum
@@ -125,6 +127,7 @@ There are paper with code and note in terms of deep learning.
     - 3D-Detection-Survey-2019
     - FSL-Survey-2019
     - MOT-Survey-2020
+    - Transformer-Survey-2021
 
 ## Image Classification
 | Title | Paper | Conf | Code |
@@ -179,6 +182,7 @@ There are paper with code and note in terms of deep learning.
 | SETR | [Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers](http://arxiv.org/abs/2012.15840) | CVPR(2021) | [PyTorch](https://github.com/fudan-zvg/SETR)
 | Segmenter | [Segmenter: Transformer for Semantic Segmentation](http://arxiv.org/abs/2105.05633) | arXiv(2021) | [PyTorch](https://github.com/rstrudel/segmenter)
 | SegFormer | [SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers](http://arxiv.org/abs/2105.15203) | arXiv(2021) | [PyTorch](https://github.com/NVlabs/SegFormer)
+| FTN | [Fully Transformer Networks for Semantic ImageSegmentation](http://arxiv.org/abs/2106.04108) | arXiv(2021) | [code]
 
 ## Object Tracking
 | Title | Paper | Conf | Code |
@@ -235,10 +239,13 @@ There are paper with code and note in terms of deep learning.
 |:--------|:--------:|:--------:|:--------:|
 | Transformer | [Attention Is All You Need](http://arxiv.org/abs/1706.03762) | arXiv(2017) | [TensorFlow](https://github.com/tensorflow/tensor2tensor)
 | Non-local | [Non-local Neural Networks](https://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_Non-Local_Neural_Networks_CVPR_2018_paper.pdf) | CVPR(2018) | [PyTorch](https://github.com/facebookresearch/video-nonlocal-net)
+| [Image Transformer](https://gojay.top/2020/05/15/Image-Transformer/) | [Image Transformer](https://arxiv.org/abs/1802.05751) | arXiv(2018) | [code]
 | ViT | [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](http://arxiv.org/abs/2010.11929) | arXiv(2020) | [PyTorch](https://github.com/google-research/vision_transformer)
 | Swin Transformer | [Swin Transformer: Hierarchical Vision Transformer using Shifted Windows](https://arxiv.org/abs/2103.14030) | arXiv(2021) | [PyTorch](https://github.com/microsoft/Swin-Transformer)
 | ResT | [ResT: An Efficient Transformer for Visual Recognition](http://arxiv.org/abs/2105.13677) | arXiv(2021) | [PyTorch](https://github.com/wofmanaf/ResT)
 | DS-Net | [Dual-stream Network for Visual Recognition](http://arxiv.org/abs/2105.14734) | arXiv(2021) | [code]
+| TransCNN | [Transformer in Convolutional Neural Networks](http://arxiv.org/abs/2106.03180) | arXiv(2021) | [PyTorch](https://github.com/yun-liu/TransCNN)
+| Shuffle Transformer | [Shuffle Transformer: Rethinking Spatial Shuffle for Vision Transformer](http://arxiv.org/abs/2106.03650) | arXiv(2021) | [PyTorch](https://github.com/speedinghzl/ShuffleTransformer)
 
 ## Salient Object Detection
 | Title | Paper | Conf | Code |
@@ -269,11 +276,6 @@ There are paper with code and note in terms of deep learning.
 | GAN | [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) | arXiv(2014) | [code]
 | BeautyGAN | [BeautyGAN: Instance-level Facial Makeup Transfer with Deep Generative Adversarial Network](http://liusi-group.com/pdf/BeautyGAN-camera-ready_2.pdf) | ACM MM(2018) | [TensorFlow](http://liusi-group.com/projects/BeautyGAN)
 
-## Image Generation
-| Title | Paper | Conf | Code |
-|:--------|:--------:|:--------:|:--------:|
-| [ImageTransformer](https://gojay.top/2020/05/15/Image-Transformer/) | [Image Transformer](https://arxiv.org/abs/1802.05751) | arXiv(2018) | [code]
-
 ## Optimization
 | Title | Paper | Conf | Code |
 |:--------|:--------:|:--------:|:--------:|
@@ -290,3 +292,4 @@ There are paper with code and note in terms of deep learning.
 | 3D-Detection-Survey-2019 | [A Survey on 3D Object Detection Methods for Autonomous Driving Applications](http://wrap.warwick.ac.uk/114314/1/WRAP-survey-3D-object-detection-methods-autonomous-driving-applications-Arnold-2019.pdf) | ITS(2019)
 | [FSL-Survey-2019](https://gojay.top/2020/07/07/FSL-Survey-2019/) | [Generalizing from a Few Examples: A Survey on Few-Shot Learning](https://arxiv.org/abs/1904.05046) | CSUR(2019)
 | MOT-Survey-2020 | [Deep Learning in Video Multi-Object Tracking: A Survey](https://arxiv.org/abs/1907.12740) | Neurocomputing(2020)
+| Transformer-Survey-2021 | [A Survey of Transformers](http://arxiv.org/abs/2106.04554) | arXiv(2021)
