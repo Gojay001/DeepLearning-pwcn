@@ -52,11 +52,11 @@ There are paper with code and note in terms of deep learning.
         - SORT
         - DeepSORT
         - Tracktor
-        - Flow-Fuse Tracker
+        - FFT(Flow-Fuse Tracker)
         - JRMOT
         - Tracklet
-        - FairMOT
         - DMCT(Deep Multi-Camera Tracking)
+        - FairMOT
         - CenterPoint
     - VOT
         - DepthTrack
@@ -71,6 +71,7 @@ There are paper with code and note in terms of deep learning.
         - SiamBAN
         - SiamAttn
         - TSDM
+        - SiamGAT
         - RE-SiamNets
 - [FSS](#Few-Shot-Segmentation)
     - OSLSM
@@ -107,6 +108,7 @@ There are paper with code and note in terms of deep learning.
     - JL-DCF(Joint Learning and Densely-Cooperative Fusion)
     - SA-Gate(Separation-and-Aggregation Gate)
     - BiANet(Bilateral Attention Network)
+    - DSA^2F(Depth-Sensitive Attention and Automatic Multi-Modal Fusion)
 - [Unsupervised](#Unsupervised-Learning)
     - SimSiam
 - [Detection-3D](#3D-Object-Detection)
@@ -161,7 +163,7 @@ There are paper with code and note in terms of deep learning.
 | CornerNet | [CornerNet: Detecting Objects as Paired Keypoints](https://openaccess.thecvf.com/content_ECCV_2018/papers/Hei_Law_CornerNet_Detecting_Objects_ECCV_2018_paper.pdf) | ECCV(2018) | [PyTorch](https://github.com/princeton-vl/CornerNet)
 | CenterNet | [Objects as Points](https://arxiv.org/abs/1904.07850) | arXiv(2019) | [PyTorch](https://github.com/xingyizhou/CenterNet)
 | YOLOv4 | [YOLOv4: Optimal Speed and Accuracy of Object Detection](https://arxiv.org/abs/2004.10934) | arXiv(2020) | [Offical](https://github.com/AlexeyAB/darknet)
-| YOLOF | [You Only Look One-level Feature](https://arxiv.org/pdf/2103.09460.pdf) | arXiv(2021) | [PyTorch](https://github.com/megvii-model/YOLOF)
+| YOLOF | [You Only Look One-level Feature](https://arxiv.org/abs/2103.09460) | CVPR(2021) | [PyTorch](https://github.com/megvii-model/YOLOF)
 > More information can be found in [awesome-object-detection](https://github.com/amusi/awesome-object-detection).
 
 ## Object Segmentation
@@ -204,11 +206,12 @@ There are paper with code and note in terms of deep learning.
 | [FFT](https://gojay.top/2020/03/05/FFT-Flow-Fuse-Tracker/) | [Multiple Object Tracking by Flowing and Fusing](https://arxiv.org/abs/2001.11180) | arXiv(2020) | [code]
 | [JRMOT](https://gojay.top/2020/02/28/JRMOT/) | [JRMOT: A Real-Time 3D Multi-Object Tracker and a New Large-Scale Dataset](https://arxiv.org/abs/2002.08397) | arXiv(2020) | [code]
 | [Tracklet](https://gojay.top/2020/03/26/Tracklet/) | [Multi-object Tracking via End-to-end Tracklet Searching and Ranking](https://arxiv.org/abs/2003.02795) | arXiv(2020) | [code]
-| [TSDM](https://gojay.top/2020/05/23/TSDM/) | [TSDM: Tracking by SiamRPN++ with a Depth-refiner and a Mask-generator](https://arxiv.org/abs/2005.04063) | arXiv(2020) | [PyTorch](https://github.com/Gojay001/TSDM)
-| [FairMOT](https://gojay.top/2020/05/25/FairMOT/) | [A Simple Baseline for Multi-Object Tracking](https://arxiv.org/abs/2004.01888) | arXiv(2020) | [PyTorch](https://github.com/Gojay001/FairMOT)
 | DMCT | [Real-time 3D Deep Multi-Camera Tracking](https://arxiv.org/abs/2003.11753) | arXiv(2020) | [code]
-| RE-SiamNets | [Rotation Equivariant Siamese Networks for Tracking](https://arxiv.org/abs/2012.13078) | CVPR(2021) | [PyTorch](https://github.com/dkgupta90/re-siamnet)
+| [FairMOT](https://gojay.top/2020/05/25/FairMOT/) | [A Simple Baseline for Multi-Object Tracking](https://arxiv.org/abs/2004.01888) | arXiv(2020) | [PyTorch](https://github.com/Gojay001/FairMOT)
+| [TSDM](https://gojay.top/2020/05/23/TSDM/) | [TSDM: Tracking by SiamRPN++ with a Depth-refiner and a Mask-generator](https://arxiv.org/abs/2005.04063) | arXiv(2020) | [PyTorch](https://github.com/Gojay001/TSDM)
 | CenterPoint | [Center-based 3D Object Detection and Tracking](https://arxiv.org/pdf/2006.11275.pdf) | CVPR(2021) | [PyTorch](https://github.com/tianweiy/CenterPoint)
+| SiamGAT | [Graph Attention Tracking](https://arxiv.org/abs/2011.11204) | CVPR(2021) | [PyTorch](https://github.com/ohhhyeahhh/SiamGAT)
+| RE-SiamNets | [Rotation Equivariant Siamese Networks for Tracking](https://arxiv.org/abs/2012.13078) | CVPR(2021) | [PyTorch](https://github.com/dkgupta90/re-siamnet)
 
 ## Few-Shot Segmentation
 | Title | Paper | Conf | Code |
@@ -252,8 +255,9 @@ There are paper with code and note in terms of deep learning.
 |:--------|:--------:|:--------:|:--------:|
 | UC-Net | [UC-Net: Uncertainty Inspired RGB-D Saliency Detection via Conditional Variational Autoencoders](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_UC-Net_Uncertainty_Inspired_RGB-D_Saliency_Detection_via_Conditional_Variational_Autoencoders_CVPR_2020_paper.pdf) | CVPR(2020) | [PyTorch](https://github.com/JingZhang617/UCNet)
 | JL-DCF | [JL-DCF: Joint Learning and Densely-Cooperative Fusion Framework for RGB-D Salient Object Detection](https://openaccess.thecvf.com/content_CVPR_2020/papers/Fu_JL-DCF_Joint_Learning_and_Densely-Cooperative_Fusion_Framework_for_RGB-D_Salient_CVPR_2020_paper.pdf) | CVPR(2020) | [PyTorch](https://github.com/jiangyao-scu/JL-DCF-pytorch)
-| SA-Gate | [Bi-directional Cross-Modality Feature Propagation with Separation-and-Aggregation Gate for RGB-D Semantic Segmentation](https://arxiv.org/pdf/2007.09183.pdf) | ECCV(2020) | [PyTorch](https://github.com/charlesCXK/RGBD_Semantic_Segmentation_PyTorch)
-| BiANet | [Bilateral Attention Network for RGB-D Salient Object Detection](https://arxiv.org/pdf/2004.14582.pdf) | TIP(2021) | [Code]
+| SA-Gate | [Bi-directional Cross-Modality Feature Propagation with Separation-and-Aggregation Gate for RGB-D Semantic Segmentation](https://arxiv.org/abs/2007.09183) | ECCV(2020) | [PyTorch](https://github.com/charlesCXK/RGBD_Semantic_Segmentation_PyTorch)
+| BiANet | [Bilateral Attention Network for RGB-D Salient Object Detection](https://arxiv.org/abs/2004.14582) | TIP(2021) | [Code]
+| DSA^2F | [Deep RGB-D Saliency Detection with Depth-Sensitive Attention and Automatic Multi-Modal Fusion](http://arxiv.org/abs/2103.11832) | CVPR(2021) | [Code]
 
 ## Unsupervised Learning
 | Title | Paper | Conf | Code |

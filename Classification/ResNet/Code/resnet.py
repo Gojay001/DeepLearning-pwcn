@@ -347,6 +347,8 @@ def wide_resnet101_2(pretrained=False, progress=True, **kwargs):
 
 
 if __name__ == '__main__':
-    # input_size = (,3,224,224)
+    x = torch.randn((4, 3, 224, 224), requires_grad=True)
     net = resnet50()
+    out = net(x)
     print(net)
+    print(out.shape)
