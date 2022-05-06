@@ -93,6 +93,8 @@ There are paper with code and note in terms of deep learning.
     - GFS-Seg(Generalized Few-Shot)
     - SCL(Self-Corss Learning)
     - ASGNet(Adaptive Superpixel-guided Network)
+    - HSNet(Hypercorrelation Squeeze)
+    - BAM
 - [Attention](#Attention-or-Transformer)
     - Transformer
     - Non-local
@@ -235,6 +237,8 @@ There are paper with code and note in terms of deep learning.
 | GFS-Seg | [Generalized Few-Shot Semantic Segmentation](https://arxiv.org/abs/2010.05210) | arXiv(2020) | [code]
 | SCL | [Self-Guided and Cross-Guided Learning for Few-Shot Segmentation](https://arxiv.org/pdf/2103.16129.pdf) | CVPR(2021) | [PyTorch](https://github.com/zbf1991/SCL)
 | ASGNet | [Adaptive Prototype Learning and Allocation for Few-Shot Segmentation](https://arxiv.org/pdf/2104.01893.pdf) | CVPR(2021) | [PyTorch](https://github.com/Reagan1311/ASGNet)
+| HSNet | [Hypercorrelation Squeeze for Few-Shot Segmenation](https://openaccess.thecvf.com/content/ICCV2021/papers/Min_Hypercorrelation_Squeeze_for_Few-Shot_Segmentation_ICCV_2021_paper.pdf) | ICCV(2021) | [PyTorch](https://github.com/juhongm999/hsnet)
+| BAM | [Learning What Not to Segment: A New Perspective on Few-Shot Segmentation](https://arxiv.org/abs/2203.07615) | CVPR(2022) | [PyTorch](https://github.com/chunbolang/BAM)
 > More information can be found in [Few-Shot-Semantic-Segmentation-Papers](https://github.com/xiaomengyc/Few-Shot-Semantic-Segmentation-Papers).
 
 ## Attention or Transformer
