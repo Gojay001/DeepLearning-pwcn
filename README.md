@@ -95,6 +95,23 @@ There are paper with code and note in terms of deep learning.
     - ASGNet(Adaptive Superpixel-guided Network)
     - HSNet(Hypercorrelation Squeeze)
     - BAM
+- [3D-Face](#3D-Face-Reconstruction-and-Facial-Animation)
+    - 3DMM
+    - CameraCalibration
+    - Bilinear
+    - DDE
+    - FaceWarehouse
+    - Face2Face
+    - DynamicAvatars
+    - FLAME
+    - Nonlinear
+    - DynamicRigidityPrior
+    - Deep3D
+    - SimpleAnimation
+    - RingNet
+    - FOCUS
+    - MICA
+    - HRN
 - [Attention](#Attention-or-Transformer)
     - Transformer
     - Non-local
@@ -240,6 +257,26 @@ There are paper with code and note in terms of deep learning.
 | HSNet | [Hypercorrelation Squeeze for Few-Shot Segmenation](https://openaccess.thecvf.com/content/ICCV2021/papers/Min_Hypercorrelation_Squeeze_for_Few-Shot_Segmentation_ICCV_2021_paper.pdf) | ICCV(2021) | [PyTorch](https://github.com/juhongm999/hsnet)
 | BAM | [Learning What Not to Segment: A New Perspective on Few-Shot Segmentation](https://arxiv.org/abs/2203.07615) | CVPR(2022) | [PyTorch](https://github.com/chunbolang/BAM)
 > More information can be found in [Few-Shot-Semantic-Segmentation-Papers](https://github.com/xiaomengyc/Few-Shot-Semantic-Segmentation-Papers).
+
+## 3D Face Reconstruction and Facial Animation
+| Title | Paper | Conf | Code |
+|:--------|:--------:|:--------:|:--------:|
+| 3DMM | [A Morphable Model For The Synthesis Of 3D Faces](https://dl.acm.org/doi/10.1145/311535.311556) | SIGGRAPH(1999) | [code]
+| CameraCalibration | [A Flexible New Technique for CameraCalibration](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr98-71.pdf) | TPAMI(2000) | [code]
+| Bilinear | [Bilinear Models for 3-D Face andFacial Expression Recognition](https://d1wqtxts1xzle7.cloudfront.net/49198237/tifs.2008.92459820160928-12079-1abw3dh-libre.pdf?1475124509=&response-content-disposition=inline%3B+filename%3DBilinear_Models_for_3_D_Face_and_Facial.pdf&Expires=1678444054&Signature=LMHkODHpSWWRiDuM1HKyl9vtuq7oTkysoLJEm8eXLlkGR~qQT1JFJzNc0dLj3rPBSWEPMuUKA7WILvlwOJFdzW6wej0vnyavrdQyct~v3eBgYomgzGz70QML7EL3K8VjuuI8rJ6ruMgus6wD8dcUh4et3tAvPZKu7CNv7DW0sP2hP-PwhNDf~8wgb0EJQdN7sd-5cSjkcKgMlt6PJ2WvFiFh3YExXNzrmmE-pa2gzndIYgqMP3H-pNZ5pBSG0OUxJEjOrFyIW9nwmDgxNYQjtwXmZv3hVJ4vMn2RavklUY26UvWd4V9AtW8VBmKq-Uo41lWc2j59sfURFbAVkEwh3g__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA) | TIFS(2008) | [code]
+| DDE | [Displaced Dynamic Expression Regression forReal-time Facial Tracking and Animation](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr98-71.pdf) | TOG(2014) | [code]
+| FaceWarehouse | [FaceWarehouse: a 3D Facial Expression Databasefor Visual Computing](http://kunzhou.net/2012/facewarehouse-tr.pdf) | TVCG(2014) | [code]
+| Face2Face | [Face2Face: Real-Time Face Capture and Reenactment of RGB Videos](https://openaccess.thecvf.com/content_cvpr_2016/papers/Thies_Face2Face_Real-Time_Face_CVPR_2016_paper.pdf) | CVPR(2016) | [code]
+| DynamicAvatars | [Real-time Facial Animation with Image-based Dynamic Avatars](https://eprints.whiterose.ac.uk/134265/1/TianjiaShao_Realtime_Facial_Animation.pdf/) | TOG(2016) | [code]
+| FLAME | [Learning a model of facial shape and expression from 4D scans](https://3dvar.com/Li2017Learning.pdf) | TOG(2017) | [Tensorflow](https://github.com/Rubikplayer/flame-fitting) [PyTorch](https://github.com/soubhiksanyal/FLAME_PyTorch)
+| Nonlinear | [Nonlinear 3D Face Morphable Model](http://cvlab.cse.msu.edu/project-nonlinear-3dmm.html) | CVPR(2018) | [Tensorflow](https://github.com/tranluan/Nonlinear_Face_3DMM)
+| DynamicRigidityPrior | [Stabilized real-time face tracking via a learned dynamic rigidity prior](https://dl.acm.org/doi/10.1145/3272127.3275093) | TOG(2018) | [code]
+| Deep3D | [Accurate 3D Face Reconstruction with Weakly-Supervised Learning: From Single Image to Image Set](https://openaccess.thecvf.com/content_CVPRW_2019/papers/AMFG/Deng_Accurate_3D_Face_Reconstruction_With_Weakly-Supervised_Learning_From_Single_Image_CVPRW_2019_paper.pdf) | CVPR(2019) | [Tensorflow](https://github.com/Microsoft/Deep3DFaceReconstruction) [PyTorch](https://github.com/sicxu/Deep3DFaceRecon_pytorch)
+| SimpleAnimation | [Face It!: A Pipeline for Real-Time Performance-Driven Facial Animation](https://www-live.dfki.de/fileadmin/user_upload/import/10613_ICIP2019.pdf) | ICIP(2019) | [code]
+| RingNet | [Learning to Regress 3D Face Shape and Expression from an Image without 3D Supervision](https://openaccess.thecvf.com/content_CVPR_2019/papers/Sanyal_Learning_to_Regress_3D_Face_Shape_and_Expression_From_an_CVPR_2019_paper.pdf) | CVPR(2019) | [Tensorflow](https://github.com/soubhiksanyal/RingNet)
+| FOCUS | [To fit or not to fit: Model-based Face Reconstruction and Occlusion Segmentation from Weak Supervision](https://arxiv.org/abs/2106.09614) | arXiv(2021) | [PyTorch](https://github.com/unibas-gravis/Occlusion-Robust-MoFA)
+| MICA | [Towards Metrical Reconstruction of Human Faces](https://arxiv.org/abs/2204.06607) | ECCV(2022) | [PyTorch](https://github.com/Zielon/MICA)
+| HRN | [A Hierarchical Representation Network for Accurate and Detailed Face Reconstruction from In-The-Wild Images](https://arxiv.org/abs/2302.14434) | CVPR(2023) | [PyTorch](https://github.com/youngLBW/HRN)
 
 ## Attention or Transformer
 | Title | Paper | Conf | Code |
