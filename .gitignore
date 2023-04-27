@@ -1,11 +1,5 @@
 # MacOS
 .DS_Store
 
-# project dirs
-/Classification
-data/
-submit/
-checkpoints/
-
 # python cache
 __pycache__/
